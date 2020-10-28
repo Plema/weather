@@ -1,0 +1,692 @@
+
+@import "libs/fonts";
+@import "libs/fontello";
+@import 'libs/normalize.scss';
+
+body {
+    position: relative;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-family: 'DIN Pro';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.main{
+    overflow-x: hidden;
+}
+
+.section{
+    position: relative;
+    z-index: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul li,
+ol li {
+    margin: 0;
+}
+
+sup {
+    top: -.5em;
+    font-weight: 700;
+    font-size: 64%;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix {
+    &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        clear: both;
+        height: 0;
+    }
+}
+
+a {
+    cursor: pointer;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.wrapper{
+    .box{
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        .container{
+            .header{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 18px 0 18px 0px;
+                .logo{
+                    margin: 0 auto;
+                }
+                .top_content{
+                    display: flex;
+                    padding: 15px 5px 10px 10px;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #323238;
+                        margin: 0;
+                        text-align: center;
+                    }
+                    a{
+                        position: relative;
+                        padding: 12px 0 9px 45px;
+                        margin: 0 auto;
+
+                        span{
+                            position: absolute;
+                            left: 0;
+                            transform: translate(1px, -10px);
+                        }
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #323238;
+                    }
+                }
+            }
+            .content{
+                position: relative;
+                padding: 65px 0 70px;
+                .weather_box{
+                    position: relative;
+                    width: 290px;
+                    height: 290px;
+                    margin: 0 auto 58px;
+                    .circle_about{
+                        position: absolute;
+                        width: 279.29px;
+                        height: 279.29px;
+                        border-radius: 50%;
+                        transform: rotate(-20.86deg);
+                        position: absolute;
+                        left: 6px;
+                        top:4px;
+                        z-index: 1;
+                    }
+                    .circle{
+                        width: 206px;
+                        height: 206px;
+                        border-radius: 50%;
+                        position: relative;
+                        margin: 0 auto;
+                        z-index: 2;
+                        transform: translate(0px, 40px);
+                        p{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            display: flex;
+                            width: 100%;
+                            padding: 0 30px 0 30px;
+                            transform: translate(-50%,-50%);
+                            justify-content: space-around;
+                            strong{
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 60px;
+                                line-height: 94px;
+                                color: #000000;
+                            }
+                            .cels{
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 44px;
+                                line-height: 75px;
+                                color: #000000;
+                                position: relative;
+                                transform: translate(-1px, 14px);
+                                &:before{
+                                    position: absolute;
+                                    left: -10px;
+                                    content: 'o';
+                                    color: #000;
+                                    font-size: 25px;
+                                    top: -15px;
+                                }
+                            }
+                            .icon{
+                                position: absolute;
+                                right: 0;
+                                display: block;
+                                transform: translate(25px,15px);
+                                width: 35%;
+                            }
+                        }
+                    }
+                }
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 40px;
+                    line-height: 56px;
+                    color: #000000;
+                    display: block;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+        &.box_1{
+            background-image: url("../img/bg_1.png");
+            .container{
+                .header{
+                    border-bottom: 1px solid #FFB87E;
+                    .top_content{
+                        a{
+                            span{
+                                svg{
+                                    g{
+                                        fill:"#F3903F";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .content{
+                    .weather_box{
+                        .circle_about{
+                            background: linear-gradient(222.59deg, #FFCFB5 15.71%, #FCB983 50.93%, #FF5F43 87.66%);
+                        }
+                        .circle{
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 30px #F32D0B;
+                        }
+                    }
+                }
+            }
+        }
+        &.box_2{
+            background-image: url("../img/bg_2.png");
+            .container{
+                .header{
+                    border-bottom: 1px solid #8DCDEE;
+
+                }
+                .content{
+                    .weather_box{
+                        .circle_about{
+                            background: linear-gradient(222.59deg, #BCF8F4 15.71%, #03DBEF 50.93%, #0DA6E8 87.66%);
+                        }
+                        .circle{
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 30px #1CA2DB;
+                        }
+                    }
+                }
+            }
+        }
+        &.box_3{
+            background-image: url("../img/bg_3.png");
+            .container{
+                .header{
+                    border-bottom: 1px solid #0E2E6B;
+                    .top_content{
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 24px 5px 10px 10px;
+                        p{
+                            color: #FFFFFF;
+                        }
+                        a{
+                           color: #FFFFFF;
+                        }
+                    }
+                }
+                .content{
+                    .weather_box{
+                        .circle_about{
+                            background: linear-gradient(222.59deg, #A43585 15.71%, #1338BA 50.93%, #2D18B2 87.66%);
+                        }
+                        .circle{
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 30px #1CA2DB;
+
+                        }
+                    }
+                    p{
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        &.box_4{
+            background-image: url("../img/bg_4.png");
+            .container{
+                .header{
+                    border-bottom: 1px solid #8DCDEE;;
+                }
+                .content{
+                    .weather_box{
+                        .circle_about{
+                            background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #FAF9E8 50.93%, #D0C02E 87.66%);
+                        }
+                        .circle{
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 30px #F4E06A;
+                        }
+                    }
+                }
+            }
+        }
+        &.box_5{
+            background-image: url("../img/bg_5.png");
+            .container{
+                .header{
+                    border-bottom: 1px solid #6BB1CF;
+                }
+                .content{
+                    .weather_box{
+                        .circle_about{
+                            background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #90DDF5 50.93%, #6CCAE8 87.66%);
+                        }
+                        .circle{
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 30px #8DCFEB;
+                            p{
+                                .icon{
+                                    transform: translate(40px,80px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.box_6{
+            background-image: url("../img/bg_6.png");
+            .container{
+                .header{
+                    border-bottom: 1px solid #999A9A;
+                }
+                .content{
+                    .weather_box{
+                        .circle_about{
+                            background: linear-gradient(222.59deg, #ECF9FD 15.71%, #9FC5D1 50.93%, #5393A8 87.66%);
+                        }
+                        .circle{
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 30px #B1B2B3;
+                            p{
+                                .icon{
+                                    transform: translate(49px,76px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 648px;
+        padding: 0;
+    }
+
+    .wrapper{
+        .box{
+            background-repeat: no-repeat;
+            background-size: cover;
+            .container{
+                .header{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 18px 0 18px 0px;
+                    .logo{
+                        margin: 0;
+                    }
+                    .top_content{
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 15px 5px 10px 10px;
+                        p{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #323238;
+                            margin: 13px 38px 0 0;
+                        }
+                        a{
+                            position: relative;
+                            padding: 12px 0 0 58px;
+                            span{
+                                position: absolute;
+                                left: 0;
+                                transform: translate(1px, -10px);
+                            }
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #323238;
+                        }
+                    }
+                }
+                .content{
+                    position: relative;
+                    padding: 65px 0 70px;
+                    .weather_box{
+                        position: relative;
+                        width: 360px;
+                        height: 360px;
+                        margin: 0 auto 58px;
+                        .circle_about{
+                            position: absolute;
+                            width: 349.29px;
+                            height: 349.29px;
+                            border-radius: 50%;
+                            transform: rotate(-20.86deg);
+                            position: absolute;
+                            left: 6px;
+                            top:4px;
+                            z-index: 1;
+                        }
+                        .circle{
+                            width: 276px;
+                            height: 276px;
+                            border-radius: 50%;
+                            position: relative;
+                            margin: 0 auto;
+                            z-index: 2;
+                            transform: translate(0px, 40px);
+                            p{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                display: flex;
+                                width: 100%;
+                                padding: 0 30px 0 30px;
+                                transform: translate(-50%,-50%);
+                                justify-content: space-around;
+                                strong{
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 80px;
+                                    line-height: 94px;
+                                    color: #000000;
+                                }
+                                .cels{
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 64px;
+                                    line-height: 75px;
+                                    color: #000000;
+                                    position: relative;
+                                    transform: translate(-1px, 14px);
+                                    &:before{
+                                        position: absolute;
+                                        left: -23px;
+                                        content: 'o';
+                                        color: #000;
+                                        font-size: 44px;
+                                        top: -15px;
+                                    }
+                                }
+                                .icon{
+                                    position: absolute;
+                                    right: 0;
+                                    display: block;
+                                    transform: translate(37px, 10px);
+                                }
+                            }
+                        }
+                    }
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 48px;
+                        line-height: 56px;
+                        color: #000000;
+                        display: block;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }
+            &.box_1{
+                background-image: url("../img/bg_1.png");
+                .container{
+                    .header{
+                        border-bottom: 1px solid #FFB87E;
+                    }
+                    .content{
+                        .weather_box{
+                            .circle_about{
+                                background: linear-gradient(222.59deg, #FFCFB5 15.71%, #FCB983 50.93%, #FF5F43 87.66%);
+                            }
+                            .circle{
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 30px #F32D0B;
+                            }
+                        }
+                    }
+                }
+            }
+            &.box_2{
+                background-image: url("../img/bg_2.png");
+                .container{
+                    .header{
+                        border-bottom: 1px solid #8DCDEE;
+                    }
+                    .content{
+                        .weather_box{
+                            .circle_about{
+                                background: linear-gradient(222.59deg, #BCF8F4 15.71%, #03DBEF 50.93%, #0DA6E8 87.66%);
+                            }
+                            .circle{
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 30px #1CA2DB;
+                            }
+                        }
+                    }
+                }
+            }
+            &.box_3{
+                background-image: url("../img/bg_3.png");
+                .container{
+                    .header{
+                        border-bottom: 1px solid #0E2E6B;
+                        .top_content{
+                            display: flex;
+                            justify-content: flex-end;
+                            padding: 24px 5px 10px 10px;
+                            p{
+                                color: #FFFFFF;
+                            }
+                            a{
+                                span{
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                    .content{
+                        .weather_box{
+                            .circle_about{
+                                background: linear-gradient(222.59deg, #A43585 15.71%, #1338BA 50.93%, #2D18B2 87.66%);
+                            }
+                            .circle{
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 30px #1CA2DB;
+
+                            }
+                        }
+                        p{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            &.box_4{
+                background-image: url("../img/bg_4.png");
+                .container{
+                    .header{
+                        border-bottom: 1px solid #8DCDEE;;
+                    }
+                    .content{
+                        .weather_box{
+                            .circle_about{
+                                background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #FAF9E8 50.93%, #D0C02E 87.66%);
+                            }
+                            .circle{
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 30px #F4E06A;
+                            }
+                        }
+                    }
+                }
+            }
+            &.box_5{
+                background-image: url("../img/bg_5.png");
+                .container{
+                    .header{
+                        border-bottom: 1px solid #6BB1CF;
+                    }
+                    .content{
+                        .weather_box{
+                            .circle_about{
+                                background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #90DDF5 50.93%, #6CCAE8 87.66%);
+                            }
+                            .circle{
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 30px #8DCFEB;
+                            }
+                        }
+                    }
+                }
+            }
+            &.box_6{
+                background-image: url("../img/bg_6.png");
+                .container{
+                    .header{
+                        border-bottom: 1px solid #999A9A;
+                    }
+                    .content{
+                        .weather_box{
+                            .circle_about{
+                                background: linear-gradient(222.59deg, #ECF9FD 15.71%, #9FC5D1 50.93%, #5393A8 87.66%);
+                            }
+                            .circle{
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 30px #B1B2B3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 864px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1205px;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1160px;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1280px;
+    }
+}
