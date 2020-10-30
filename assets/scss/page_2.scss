@@ -1,0 +1,62 @@
+.wrapper{
+  .box{
+
+    &.box_2{
+      background-image: url("../img/bg_2.png");
+      .container{
+        .header{
+          border-bottom: 1px solid #8DCDEE;
+
+        }
+        .content{
+          .weather_box{
+            .circle_about{
+              background: linear-gradient(222.59deg, #BCF8F4 15.71%, #03DBEF 50.93%, #0DA6E8 87.66%);
+            }
+            .circle{
+              background: #FFFFFF;
+              box-shadow: 0px 4px 30px #1CA2DB;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 648px;
+    padding: 0;
+  }
+
+  .wrapper{
+    .box{
+
+      &.box_2{
+        background-image: url("../img/bg_2.png");
+        .container{
+          .header{
+            border-bottom: 1px solid #8DCDEE;
+          }
+          .content{
+            .weather_box{
+              .circle_about{
+                background: linear-gradient(222.59deg, #BCF8F4 15.71%, #03DBEF 50.93%, #0DA6E8 87.66%);
+              }
+              .circle{
+                background: #FFFFFF;
+                box-shadow: 0px 4px 30px #1CA2DB;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+

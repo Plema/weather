@@ -199,7 +199,7 @@ a {
                             width: 100%;
                             padding: 0 30px 0 30px;
                             transform: translate(-50%,-50%);
-                            justify-content: space-around;
+                            justify-content: center;
                             strong{
                                 font-style: normal;
                                 font-weight: 500;
@@ -215,9 +215,10 @@ a {
                                 color: #000000;
                                 position: relative;
                                 transform: translate(-1px, 14px);
+                                padding: 0 0 0 15px;
                                 &:before{
                                     position: absolute;
-                                    left: -10px;
+                                    left: 5px;
                                     content: 'o';
                                     color: #000;
                                     font-size: 25px;
@@ -246,157 +247,7 @@ a {
                 }
             }
         }
-        &.box_1{
-            background-image: url("../img/bg_1.png");
-            .container{
-                .header{
-                    border-bottom: 1px solid #FFB87E;
-                    .top_content{
-                        a{
-                            span{
-                                svg{
-                                    g{
-                                        fill:"#F3903F";
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .content{
-                    .weather_box{
-                        .circle_about{
-                            background: linear-gradient(222.59deg, #FFCFB5 15.71%, #FCB983 50.93%, #FF5F43 87.66%);
-                        }
-                        .circle{
-                            background: #FFFFFF;
-                            box-shadow: 0px 4px 30px #F32D0B;
-                        }
-                    }
-                }
-            }
-        }
-        &.box_2{
-            background-image: url("../img/bg_2.png");
-            .container{
-                .header{
-                    border-bottom: 1px solid #8DCDEE;
 
-                }
-                .content{
-                    .weather_box{
-                        .circle_about{
-                            background: linear-gradient(222.59deg, #BCF8F4 15.71%, #03DBEF 50.93%, #0DA6E8 87.66%);
-                        }
-                        .circle{
-                            background: #FFFFFF;
-                            box-shadow: 0px 4px 30px #1CA2DB;
-                        }
-                    }
-                }
-            }
-        }
-        &.box_3{
-            background-image: url("../img/bg_3.png");
-            .container{
-                .header{
-                    border-bottom: 1px solid #0E2E6B;
-                    .top_content{
-                        display: flex;
-                        justify-content: flex-end;
-                        padding: 24px 5px 10px 10px;
-                        p{
-                            color: #FFFFFF;
-                        }
-                        a{
-                           color: #FFFFFF;
-                        }
-                    }
-                }
-                .content{
-                    .weather_box{
-                        .circle_about{
-                            background: linear-gradient(222.59deg, #A43585 15.71%, #1338BA 50.93%, #2D18B2 87.66%);
-                        }
-                        .circle{
-                            background: #FFFFFF;
-                            box-shadow: 0px 4px 30px #1CA2DB;
-
-                        }
-                    }
-                    p{
-                        color: #FFFFFF;
-                    }
-                }
-            }
-        }
-        &.box_4{
-            background-image: url("../img/bg_4.png");
-            .container{
-                .header{
-                    border-bottom: 1px solid #8DCDEE;;
-                }
-                .content{
-                    .weather_box{
-                        .circle_about{
-                            background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #FAF9E8 50.93%, #D0C02E 87.66%);
-                        }
-                        .circle{
-                            background: #FFFFFF;
-                            box-shadow: 0px 4px 30px #F4E06A;
-                        }
-                    }
-                }
-            }
-        }
-        &.box_5{
-            background-image: url("../img/bg_5.png");
-            .container{
-                .header{
-                    border-bottom: 1px solid #6BB1CF;
-                }
-                .content{
-                    .weather_box{
-                        .circle_about{
-                            background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #90DDF5 50.93%, #6CCAE8 87.66%);
-                        }
-                        .circle{
-                            background: #FFFFFF;
-                            box-shadow: 0px 4px 30px #8DCFEB;
-                            p{
-                                .icon{
-                                    transform: translate(40px,80px);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.box_6{
-            background-image: url("../img/bg_6.png");
-            .container{
-                .header{
-                    border-bottom: 1px solid #999A9A;
-                }
-                .content{
-                    .weather_box{
-                        .circle_about{
-                            background: linear-gradient(222.59deg, #ECF9FD 15.71%, #9FC5D1 50.93%, #5393A8 87.66%);
-                        }
-                        .circle{
-                            background: #FFFFFF;
-                            box-shadow: 0px 4px 30px #B1B2B3;
-                            p{
-                                .icon{
-                                    transform: translate(49px,76px);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -412,6 +263,7 @@ a {
         .box{
             background-repeat: no-repeat;
             background-size: cover;
+
             .container{
                 .header{
                     display: flex;
@@ -483,13 +335,13 @@ a {
                                 width: 100%;
                                 padding: 0 30px 0 30px;
                                 transform: translate(-50%,-50%);
-                                justify-content: space-around;
                                 strong{
                                     font-style: normal;
                                     font-weight: 500;
                                     font-size: 80px;
                                     line-height: 94px;
                                     color: #000000;
+                                    transform: translate(-9px, 0px);
                                 }
                                 .cels{
                                     font-style: normal;
@@ -499,13 +351,14 @@ a {
                                     color: #000000;
                                     position: relative;
                                     transform: translate(-1px, 14px);
+                                    padding: 0 0 0 30px;
                                     &:before{
+                                        font-size: 44px;
                                         position: absolute;
-                                        left: -23px;
+                                        top: -15px;
+                                        left: 5px;
                                         content: 'o';
                                         color: #000;
-                                        font-size: 44px;
-                                        top: -15px;
                                     }
                                 }
                                 .icon{
@@ -529,137 +382,7 @@ a {
                     }
                 }
             }
-            &.box_1{
-                background-image: url("../img/bg_1.png");
-                .container{
-                    .header{
-                        border-bottom: 1px solid #FFB87E;
-                    }
-                    .content{
-                        .weather_box{
-                            .circle_about{
-                                background: linear-gradient(222.59deg, #FFCFB5 15.71%, #FCB983 50.93%, #FF5F43 87.66%);
-                            }
-                            .circle{
-                                background: #FFFFFF;
-                                box-shadow: 0px 4px 30px #F32D0B;
-                            }
-                        }
-                    }
-                }
-            }
-            &.box_2{
-                background-image: url("../img/bg_2.png");
-                .container{
-                    .header{
-                        border-bottom: 1px solid #8DCDEE;
-                    }
-                    .content{
-                        .weather_box{
-                            .circle_about{
-                                background: linear-gradient(222.59deg, #BCF8F4 15.71%, #03DBEF 50.93%, #0DA6E8 87.66%);
-                            }
-                            .circle{
-                                background: #FFFFFF;
-                                box-shadow: 0px 4px 30px #1CA2DB;
-                            }
-                        }
-                    }
-                }
-            }
-            &.box_3{
-                background-image: url("../img/bg_3.png");
-                .container{
-                    .header{
-                        border-bottom: 1px solid #0E2E6B;
-                        .top_content{
-                            display: flex;
-                            justify-content: flex-end;
-                            padding: 24px 5px 10px 10px;
-                            p{
-                                color: #FFFFFF;
-                            }
-                            a{
-                                span{
-                                    color: #FFFFFF;
-                                }
-                            }
-                        }
-                    }
-                    .content{
-                        .weather_box{
-                            .circle_about{
-                                background: linear-gradient(222.59deg, #A43585 15.71%, #1338BA 50.93%, #2D18B2 87.66%);
-                            }
-                            .circle{
-                                background: #FFFFFF;
-                                box-shadow: 0px 4px 30px #1CA2DB;
 
-                            }
-                        }
-                        p{
-                            color: #FFFFFF;
-                        }
-                    }
-                }
-            }
-            &.box_4{
-                background-image: url("../img/bg_4.png");
-                .container{
-                    .header{
-                        border-bottom: 1px solid #8DCDEE;;
-                    }
-                    .content{
-                        .weather_box{
-                            .circle_about{
-                                background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #FAF9E8 50.93%, #D0C02E 87.66%);
-                            }
-                            .circle{
-                                background: #FFFFFF;
-                                box-shadow: 0px 4px 30px #F4E06A;
-                            }
-                        }
-                    }
-                }
-            }
-            &.box_5{
-                background-image: url("../img/bg_5.png");
-                .container{
-                    .header{
-                        border-bottom: 1px solid #6BB1CF;
-                    }
-                    .content{
-                        .weather_box{
-                            .circle_about{
-                                background: linear-gradient(222.59deg, rgba(255, 255, 255, 0.8537) 15.71%, #90DDF5 50.93%, #6CCAE8 87.66%);
-                            }
-                            .circle{
-                                background: #FFFFFF;
-                                box-shadow: 0px 4px 30px #8DCFEB;
-                            }
-                        }
-                    }
-                }
-            }
-            &.box_6{
-                background-image: url("../img/bg_6.png");
-                .container{
-                    .header{
-                        border-bottom: 1px solid #999A9A;
-                    }
-                    .content{
-                        .weather_box{
-                            .circle_about{
-                                background: linear-gradient(222.59deg, #ECF9FD 15.71%, #9FC5D1 50.93%, #5393A8 87.66%);
-                            }
-                            .circle{
-                                background: #FFFFFF;
-                                box-shadow: 0px 4px 30px #B1B2B3;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -674,19 +397,14 @@ a {
     .container {
         width: 1205px;
     }
-
-
-}
-
-@media (min-width: 1400px) {
-    .container {
-        width: 1160px;
+    .wrapper{
+        .box{
+            width: 1280px;
+            margin: 0 auto;
+        }
     }
-}
 
 
-@media (min-width: 1600px) {
-    .container {
-        width: 1280px;
-    }
+
 }
+
